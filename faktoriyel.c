@@ -1,11 +1,12 @@
 #include <stdio.h>
 
 int fact(int);
+void yaz();
 
 int main(){
 	int sayi;
 	long sonuc;
-	printf("\nLütfen sayı giriniz\n");
+	yaz();
 	scanf("%d",&sayi);
 	sonuc=fact(sayi);
 	printf("\n%d sayısının faktoriyeli %ld'dir.\n",sayi,sonuc);
@@ -18,4 +19,8 @@ int fact(int x){
 		x*=i;
 	}
 	return x;
+}
+
+void yaz(){
+	printf("\nLütfen sayı giriniz\n");
 }
