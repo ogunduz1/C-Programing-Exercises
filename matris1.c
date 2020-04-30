@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 //rastgele 5x8 lik binary matris oluşturur.
+int rand();
 int main() {
 	int r;
 	for(int i=0;i<5;i++) {//i satır değeri için
